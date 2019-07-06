@@ -35,6 +35,6 @@ app.get("/delete/:id" ,async (req,res) => {
     res.status(200).send(todo)
 })
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log("Start on port 3001")
 })
